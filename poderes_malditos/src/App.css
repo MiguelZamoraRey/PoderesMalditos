@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.alignleft{
+    text-align: left;
+}
+
+.card{
+    color:#282c34;
+}
+
+.question-btn{
+    margin: 0.5rem;
+}
+
+/*Para desaparecer*/
+.transparent {  
+    display: none;  
+    -webkit-animation: fadeNoneFromIn 0.5s forwards;
+    -moz-animation: fadeNoneFromIn 0.5s forwards;
+    -o-animation: fadeNoneFromIn 0.5s forwards;
+    animation: fadeNoneFromIn 0.5s forwards;
+}
+
+/*Para aparecer*/
+.visible {
+  display: block;
+  -webkit-animation: fadeInFromNone 0.5s forwards;
+  -moz-animation: fadeInFromNone 0.5s forwards;
+  -o-animation: fadeInFromNone 0.5s forwards;
+  animation: fadeInFromNone 0.5s forwards;
+}
+
+@-webkit-keyframes fadeNoneFromIn{
+  0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeNoneFromIn{
+  0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeNoneFromIn{
+  0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeNoneFromIn{
+  0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: none;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: none;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: none;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: none;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

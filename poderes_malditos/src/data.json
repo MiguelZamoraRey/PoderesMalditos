@@ -1,0 +1,172 @@
+{
+	"superpoderes":[
+		{
+			"num":"1",
+			"tituloPrincipal":"Barítono",
+			"tituloSecundario":"Artesano",
+			"descripcionPrincipal":"Tu poder reside en tu voz, una asombrosa herramienta de destrucción y creación. Por un lado, puedes emitir sonidos a una frecuencia tan alta que puedes destruir objetos y dañar a la gente. Por otro lado, puedes emular casi cualquier sonido que hayas escuchado antes, desde el trino de un pájaro hasta el rugido de un león, como una increíble beatbox humana. Cada palabra que sale por tu garganta tiene el potencial de un milagro.",
+			"descripcionSecundario":"Tienes la capacidad de fabricar cosas de forma natural. Conoces todas las herramientas de artesanía de forma innata y todo lo que construyes lo haces con una rapidez increíble y una calidad soberbia. Desde la simpleza de una lanza a la complejidad de un ordenador cuántico, si puedes imaginar algo, puedes construirlo. El problema reside en si eres responsable de todo lo que creas."
+		},
+		{
+			"num":"2",
+			"tituloPrincipal":"Ilusionista",
+			"tituloSecundario":"Hombre Invisible",
+			"descripcionPrincipal":"Tienes la capacidad de crear ilusiones de la nada. Aunque la mayor parte de estos efectos son visuales, también puedes generar sonidos, olores e incluso sabores. Monstruos terribles, personas famosas y objetos olvidados... todo es posible. Las ilusiones pueden ser tan vívidas como tú seas capaz de imaginarlas, aunque en el fondo no sean más que un producto de tu imaginación. Te resulta tan fácil engañar a los demás que no puedes evitar preguntarte si toda tu vida no será un engaño perpetrado por otra persona.",
+			"descripcionSecundario":"A voluntad (o quizá de forma permanente) puedes envolver tu cuerpo (e incluso tu equipo) en un campo de invisibilidad que permite que la luz te atraviese, lo que, a efectos prácticos, te vuelve completamente invisible. Ni siquiera las cámaras pueden captar tu imagen cuando te encuentras en ese estado. Afortunadamente, tus pupilas parecen seguir reflejando la luz, por lo que no te vuelves ciego al usar tu poder. Pero la pregunta que te haces es: si nadie más te ve, ¿realmente existes?"
+		},
+		{
+			"num":"3",
+			"tituloPrincipal":"Manipulador",
+			"tituloSecundario":"Transmisor Emocional.",
+			"descripcionPrincipal":"El ser humano es un cúmulo de sentimientos y tú puedes controlarlos todos: puedes hacer que la gente sienta miedo, amor y odio, todo ligado a tu voluntad. Las personas más astutas pueden darse cuenta de tu manipulación, pero no pueden evitar sentir lo que tú quieres que sientan. La vida es una obra de teatro y tú eres el director.",
+			"descripcionSecundario":"Eres capaz de contagiar a la gente con tus propios sentimientos. Si tú tienes miedo, la gente a tu alrededor tiene miedo, si sientes amor, la gente amará a tu alrededor... Cuanto más fuerte sea el sentimiento, más lejos llegará a afectar. Si mataran a una de las personas que amas, es posible que toda la ciudad se siembre de altercados violentos."
+		},
+		{
+			"num":"4",
+			"tituloPrincipal":"Telépata",
+			"tituloSecundario":"Hipnotizador",
+			"descripcionPrincipal":"Has logrado desarrollar un gran poder psíquico. Puedes hablar con los demás a través de la mente, contactar con otros intelectos e incluso leer los pensamientos de los que están a tu alrededor. Todo lo relacionado con el mentalismo está a tu alcance y ninguna mente puede ocultarte sus secretos durante demasiado tiempo. Al final, podrás saberlo todo sobre todos, descuartizando las personalidades de los que tienes a tu alrededor en el proceso.",
+			"descripcionSecundario":"Tienes el don de controlar las mentes de los demás. Solo con una mirada puedes controlar a una persona (o animal) mientras mantengas la concentración sobre él y, con esfuerzo, puedes controlar a más de una persona. Tus marionetas dejan de tener control sobre sus cuerpos y actúan exactamente como tú deseas. Al fin y al cabo, la gente son tus herramientas, ¿verdad?"
+		},
+		{
+			"num":"5",
+			"tituloPrincipal":"Telequinésico",
+			"tituloSecundario":"Lector de Objetos",
+			"descripcionPrincipal":"Puedes usar tu poder mental para mover objetos sin tocarlos. Eres capaz de hacer levitar muebles y lanzar cuchillos, pero nada te impide usar tu poder psíquico para inmovilizar personas o manipular campos de energía. A decir verdad, nada te impide mover y manipular todos los aspectos físicos de la realidad pero... ¿en qué te convertiría eso?",
+			"descripcionSecundario":"Cuando tocas cualquier objeto puedes sentir toda su historia, lo que ha sucedido a su alrededor y qué han hecho con él. Cualquier ser inerte sirve a tu poder, ya sean artículos manufacturados, rocas o incluso cadáveres. La información que obtienes puede ser increíblemente útil, pero comienza a ser preocupante cuando empiezas a captar sentimientos y opiniones..."
+		},
+		{
+			"num":"6",
+			"tituloPrincipal":"Urbanita",
+			"tituloSecundario":"Salvaje",
+			"descripcionPrincipal":"Te encanta la ciudad y posiblemente ames todas las grandes ciudades del mundo. Te gustan tanto que puedes hablar y obtener tu poder de ellas. Puedes viajar entre ciudades, tomar su fuerza y velocidad y hablar con su alma (ya que cada una es distinta de la anterior) para tomar prestado su poder único. Eso sí, cuanto más lejos estés de una ciudad, más débil y vulnerable te encuentras.",
+			"descripcionSecundario":"No soportas las ciudades. La polución te envenena y el ruido te aturde. Es en las tierras salvajes donde encuentras tu poder. Allí puedes adoptar la fuerza de un rinoceronte o sacar las garras como un león,puedes controlar las plantas y convertirte en la propia selva."
+		},
+		{
+			"num":"7",
+			"tituloPrincipal":"Entomólogo",
+			"tituloSecundario":"Hombre de Sangre Fría",
+			"descripcionPrincipal":"Al principio descubriste que podías oír a una araña, luego comenzaste a comprender a las abejas. Ahora tienes una total empatía con los insectos. Sí, la gente te considera un bicho raro, pero ahora puedes volar con alas membranosas, protegerte con una armadura natural quitinosa y desarrollar en segundos un aguijón venenoso. Y luego está esa mente enjambre que te permite comunicarte con todos los insectos. Cada día que la usas te resulta más confusa, como si comprendieras que es algo más de lo que aparenta...",
+			"descripcionSecundario":"Puedes mutar entre las formas de hombre y reptil, tu sangre es venenosa y puedes afectar a los impulsos primarios de la gente a tu alrededor, al menos al nivel más básico. Pero, por encima de todo, has alcanzado una memoria racial que te permite tener acceso a los recuerdos de todos los reptiles que han existido a lo largo de la historia."
+		},
+		{
+			"num":"8",
+			"tituloPrincipal":"Tritón",
+			"tituloSecundario":"Hombre Halcón",
+			"descripcionPrincipal":"El mar te llama. Tu cuerpo escamoso te delata como un extraño híbrido, tus agallas te permiten respirar bajo el agua indefinidamente, tus extremidades palmípedas te permiten nadar a altas velocidades y tus ojos te permiten ver en frecuencias distintas a las de un ojo humano normal. Eres capaz de hablar con los peces y otros animales marinos. Sabes que la mitad de ti sigue siendo un hombre, pero, cada vez que te sumerges, algo en las profundidades te llama con más fuerza.",
+			"descripcionSecundario":"Tus alas te permiten volar con la maniobrabilidad de un gorrión y tu vista y olfato tienen la precisión de un águila. Tienes un auténtico instinto cazador y a veces te ves dominado por él. Eres el depredador definitivo y no permitirás que nada ni nadie te quite el puesto."
+		},
+		{
+			"num":"9",
+			"tituloPrincipal":"Metamorfo",
+			"tituloSecundario":"Mímico",
+			"descripcionPrincipal":"Tu cuerpo tiene la capacidad de cambiar de forma a tu voluntad. Puedes transformarte en un animal o aparentar ser una papelera. Estás parcialmente limitado por el tamaño (podrías convertirte en un elefante, pero no en un edificio), pero tu cuerpo también puede comportarse como los materiales exactos de los que pretendes estar formado. Sea cual sea la forma que adoptes, seguirás con tu mente intacta, aunque a veces veas cosas que no deseas.",
+			"descripcionSecundario":"Puedes imitar a cualquier persona o humanoide que hayas visto, aunque solo haya sido fugazmente. Además, cuanto más cerca estés de la persona imitada, más fácil te resultará suplantarla. En unos segundos podrás copiar su forma de ser y en varios minutos podrás compartir sus recuerdos. Tras una hora cerca, copiándolo, podrías convertirte perfecta y permanentemente en un ser idéntico a él. En todo."
+		},
+		{
+			"num":"10",
+			"tituloPrincipal":"Clonador",
+			"tituloSecundario":"Poseedor",
+			"descripcionPrincipal":"Has desarrollado la capacidad de duplicarte. Solo tienes que activar tu poder y ¡zas! Te has dividido en dos. Ahora hay dos tús caminando por el mundo. Tú o cualquiera de tus clones podéis activar de nuevo vuestro poder, por lo que el número de clones que pueden llegar a existir es virtualmente infinito. Lamentablemente, con cada duplicación, menor es tu capacidad para concentrarte, y puedes llegar a entrar en coma si pasas mucho tiempo sin recomponerte de nuevo. De hecho, en los momentos en los que creas muchos clones siempre te planteas si tú eres o no el original...",
+			"descripcionSecundario":"Hace tiempo que tu cuerpo se pudrió, pero, sin embargo, tu mente sigue con vida en un cuerpo ajeno. Ese es tu don. Puedes cambiar tu cuerpo con el de otro ser vivo, intercambiando vuestras mentes en un instante. El afectado a veces muere durante el intercambio o sufre una incapacidad para usar su nuevo cuerpo si es muy distinto del suyo original, pero tú ya te has acostumbrado a este hecho. Tu mente es virtualmente inmortal, pero siempre te preguntas si sigues siendo el mismo que eras."
+		},
+		{
+			"num":"11",
+			"tituloPrincipal":"Regenerador",
+			"tituloSecundario":"Remendado",
+			"descripcionPrincipal":"Córtate un dedo: te volverá a nacer en menos de un minuto. Tus heridas se cierran en segundos. Tu carne se cura a plena vista. Puedes regenerar todo tu cuerpo a gran velocidad, y aún no conoces el límite de tu curación. De hecho, es posible que seas inmortal, al menos mientras una de tus células permanezca con vida. Tampoco envejeces, y asimilas fácilmente los venenos. Eres virtualmente indestructible. Sin embargo, cuando la muerte no es una amenaza, ¿qué haces con tu vida?",
+			"descripcionSecundario":"un receptor universal. Cualquier implante que necesites se adaptará a tu cuerpo sin problemas. ¿Has perdido un brazo? Tranquilo, cualquier brazo te servirá de sustituto. Maldita sea, posiblemente ni siquiera tiene que ser un brazo humano. ¡Ni siquiera orgánico! Mientras no pierdas la cabeza, podrás seguir entero siempre, aunque cada vez tienes menos claro que el alma se encuentre en el cerebro..."
+		},
+		{
+			"num":"12",
+			"tituloPrincipal":"Termoquinético",
+			"tituloSecundario":"Brujo Climático",
+			"descripcionPrincipal":"Tienes un control absoluto de la temperatura. Eres un mando a distancia viviente que puede aumentar o disminuir la temperatura a voluntad. Puedes poner a toda una habitación en el cero absoluto o llevar cualquier objeto hasta su punto de ebullición, y tu capacidad de control te permite mantener tu cuerpo aislado de estos cambios si hiciera falta. La ciencia dice que el universo está en equilibrio térmico, pero cada vez que aumentas la temperatura, la entropía se incrementa. Puede que creas que solo estás jugando con fuego, pero ¿realmente sabes qué estás haciendo con el universo?",
+			"descripcionSecundario":"Puedes controlar el clima, provocar lluvias, despejar los cielos hasta que brille un sol cegador o generar una ventisca infernal. Eres capaz de cabalgar los vientos y comandar a los rayos de una tormenta eléctrica. Solo tú te has dado cuenta de que el clima no es solo una serie de fenómenos atmosféricos, sino un ente con consciencia propia, capaz de bendecir y castigar por igual."
+		},
+		{
+			"num":"13",
+			"tituloPrincipal":"Velocista",
+			"tituloSecundario":"Reloj Humano",
+			"descripcionPrincipal":"Puedes moverte a grandes velocidades. Puedes superar con facilidad a los coches y a los aviones más lentos, y si lo intentaras, podrías alcanzar mach 1. No eres totalmente inmune a la fricción y al rozamiento, pero tu poder te permite tener un control limitado sobre la cinética de tu alrededor, por lo que la inercia y la aceleración no te restringen como deberían. También puedes actuar a gran velocidad. De hecho, hasta puedes pensar a más velocidad, lo que casi siempre te lleva a impacientarte con el resto de tus lentos, lentos compañeros.",
+			"descripcionSecundario":"Puedes manipular el tiempo a tu alrededor. Con tu voluntad puedes ralentizar una bala disparada contra ti hasta casi detenerla o acelerar una máquina hasta hacerla explotar por la fricción. Los efectos de tu poder en los seres vivos son más siniestros aún si cabe. También puedes detener el tiempo a tu alrededor. Al fin y al cabo, este ya no significa nada para ti."
+		},
+		{
+			"num":"14",
+			"tituloPrincipal":"Cronauta",
+			"tituloSecundario":"Teletransportador",
+			"descripcionPrincipal":"Has aprendido a viajar a través del tiempo, al futuro y al pasado, a épocas lejanas. Lamentablemente, no puedes viajar a momentos cercanos y en general te resultar difícil viajar a una época en la que ya hayas estado. Con esfuerzo, puedes llevar a otras personas y objetos en tus viajes. Ya has podido descubrir que tus viajes al pasado alteran el presente, pero, por algún motivo, las partes importantes de tu vida nunca se ven alteradas... que tú puedas recordar. Porque con el tiempo no puedes estar seguro de nada.",
+			"descripcionSecundario":"Puedes desintegrar tu cuerpo y reintegrarlo en cualquier otro sitio, tan solo tienes que pensar en ese sitio o conocer su posición relativa con respecto a donde estés, aunque siempre puedes dar un salto a ciegas, arriesgándote a aparecer dentro de algo que ya existe y a que la explosión originada te parta en dos. A menudo te preguntas cuán lejos puedes teletransportarte. Teóricamente puedes llegar a otros mundos, e incluso galaxias, pero ¿y si intentaras trasladarte más allá del universo?"
+		},
+		{
+			"num":"15",
+			"tituloPrincipal":"Hombre Menguante",
+			"tituloSecundario":"Gravitacional",
+			"descripcionPrincipal":"Puedes alterar tu tamaño a voluntad. Puedes convertirte en un gigante o reducirte hasta medir una micra, posiblemente incluso menos. En gravedad normal no puedes crecer más de cinco o seis metros sin que tu propio peso parta tus huesos, pero no tienes límite en cuanto a lo pequeño que puedes reducirte, aunque tienes miedo de lo que puedas ver más allá de la escala microscópica. ¿Y si descubres algo que supere a tu razón?",
+			"descripcionSecundario":"Tienes control sobre las fuerzas gravitatorias de tu alrededor, puedes hacer que cualquier cosa flote en el aire, salga despedida al cielo o que sea aplastada contra el suelo bajo una presión de 10 g. Todo es sencillo hasta que empiezas a experimentar con la relatividad: desviación gravitatoria de la luz, dilatación gravitatoria del tiempo y otras pesadillas que empiezan a superar tu entendimiento."
+		},
+		{
+			"num":"16",
+			"tituloPrincipal":"Agujero Negro",
+			"tituloSecundario":"Sanguijuela",
+			"descripcionPrincipal":"A voluntad, puedes generar un agujero negro que absorba todo lo que hay a tu alrededor: aire, objetos, personas... Todo desaparece en el vacío de tu interior. Puede que puedas sentir todo lo que absorbes, pero estás seguro de que, estén donde estén, nunca volverán. ¿Dónde están? ¿De dónde sale este poder? Esas son preguntas cuyas respuestas ya han desaparecido.",
+			"descripcionSecundario":"Si entras en contacto con un ser vivo, puedes robar su energía. Lo curioso es que «energía» es un concepto muy amplio: puedes robar salud, conocimientos y cualquier superpoder que tenga tu víctima. Al final el anfitrión terminará por curarse, pero tú conservas esa energía durante mucho más tiempo. De hecho, a veces los recuerdos, tuyos y de tu víctima, se mezclan... y muchas veces terminas preguntándote quién eres en realidad."
+		},
+		{
+			"num":"17",
+			"tituloPrincipal":"Ser Negativo",
+			"tituloSecundario":"Elemental",
+			"descripcionPrincipal":"Aunque puedes aparentar ser una persona normal, en tu interior te has convertido en un ser hecho de energía negativa, capaz de las más extrañas proezas. En tu forma real, tu contacto es frío y mortal y no estás necesariamente atado a tu cuerpo físico. Por otra parte, aún no sabes prácticamente nada acerca de tu origen.",
+			"descripcionSecundario":"Puedes transformar tu cuerpo en uno de los cuatro elementos griegos básicos (aire, fuego, agua o tierra). Durante estas transformaciones conservas tu forma humanoide, pero ya no estás atado a ninguna otra necesidad humana."
+		},
+		{
+			"num":"18",
+			"tituloPrincipal":"Espectro",
+			"tituloSecundario":"Proyector Astral.",
+			"descripcionPrincipal":"Lamentablemente, estás muerto, pero por algún motivo no has conseguido el descanso eterno y sigues en el mundo en una forma fantasmal intangible. Puedes adoptar una forma física por breves instantes, dañar a los vivos con tu toque gélido o aterrarles con tu aullido espectral. Eres un fantasma vengador, atrapado entre ambos mundos, sin poder tocar ninguno.",
+			"descripcionSecundario":"Tienes la capacidad de entrar en un estado de trance en el que puedes salir de tu cuerpo y viajar de forma astral, casi invisible e intangible. En esta forma no puedes afectar a nadie, pero a cambio eres capaz de ver el aura de las personas y los objetos, e incluso vislumbrar otros planos y mundos. Sin embargo, lo que hay al otro lado no suele gustarte nunca..."
+		},
+		{
+			"num":"19",
+			"tituloPrincipal":"Vampiro",
+			"tituloSecundario":"Hombre Lobo",
+			"descripcionPrincipal":"El Drácula del siglo xxi. Lestat, Spike y Edward son cenizas amargas. Tú eres la nueva generación de vampiros. Eres un chupasangre postmoderno. Tienes todos los poderes conocidos por los vampiros... y algo más. Puedes volar y seducir a cualquiera para que te ofrezca su yugular. Eres más fuerte y rápido de lo que ningún hombre ha sido, y muchos te considerarían un dios. Sin embargo, por algún motivo sigues atado a las antiguas leyendas. Sigues necesitando sangre para vivir, el ajo te asquea, las corrientes de agua te bloquean y necesitas recibir una invitación para entrar en una casa.",
+			"descripcionSecundario":"Tienes una bestia en tu interior que despierta cuando pierdes el control. Por supuesto, es mucho más fuerte que tú, más rápida y se cura de cualquier herida. Lo peor de todo es que debajo de todo ese salvajismo, sigues siendo tú."
+		},
+		{
+			"num":"20",
+			"tituloPrincipal":"Satanista",
+			"tituloSecundario":"Chamán",
+			"descripcionPrincipal":"Conoces los rituales, tienes el don. Puedes invocar a los demonios del infierno y hacer pactos con ellos, y es posible que ya hayas hecho algún trato que te haya concedido algún poder demoníaco y que seas conocido en los reinos infernales. Los príncipes demoníacos pueden llevar a cabo casi cualquier proeza, pero siempre exigen más de lo que estás dispuesto a dar.",
+			"descripcionSecundario":"Puedes hablar con los espíritus y obtener tu poder de ellos, lo que te da acceso a una casi infinita energía espiritual. Sin embargo, estos espíritus están en total sintonía con la Madre Tierra, por lo que eres capaz de sentir todo lo que le aflige y compartir el sufrimiento con ella..."
+		},
+		{
+			"num":"21",
+			"tituloPrincipal":"Matemático",
+			"tituloSecundario":"Sinestésico",
+			"descripcionPrincipal":"Todo el universo puede explicarse mediante matemáticas. Tú has entendido a la perfección ese hecho. Ahora no solo comprendes con exactitud las matemáticas, sino que puedes ver toda existencia como vectores y números. Puedes calcular la trayectoria exacta de un misil o la velocidad a la que se mueve algo de forma precisa. Tu capacidad de cálculo no tiene un límite concreto y eres capaz de anticiparte a las reacciones más sencillas, por lo que recientemente has empezado a sentir un terror inconsciente al pensar que podrías calcular el sentido de la vida.",
+			"descripcionSecundario":"Tu recepción de los sentidos está alterada. Puedes oler los colores, oír los olores y sentir los sonidos. Puedes percibir cualquier cosa con cualquiera de tus sentidos. Si te esfuerzas, puedes llegar más allá y oír las emociones, sentir el tiempo e incluso ver más allá de lo físico."
+		},
+		{
+			"num":"22",
+			"tituloPrincipal":"Mecamigo",
+			"tituloSecundario":"Lingüista",
+			"descripcionPrincipal":"Se podría decir que te llevas bien con las máquinas. Son tus verdaderas amigas. Entiendes su idioma y parece que les caes simpático. Cada una tiene su personalidad: desde las enamoradizas podadoras hasta los inquietos servidores de última generación. Si puedes hablarles, puedes conseguir que hagan lo que quieras, por difícil que parezca. A veces desearías que las personas fueran tan comprensibles como tus queridas máquinas...",
+			"descripcionSecundario":"Entiendes todos los idiomas existentes. Todos. Nunca has estudiado japonés pero podrías manejarte en Tokio sin problemas. Nunca has leído nada en ruso pero podrías leer Crimen y castigo en su versión original. Los idiomas no son ningún misterio para ti, ni siquiera los que no son humanos. Al final, todo en el mundo es un idioma, solo tienes que entender cómo se está contando..."
+		},
+		{
+			"num":"23",
+			"tituloPrincipal":"Ciborg",
+			"tituloSecundario":"Gólem",
+			"descripcionPrincipal":"Ya fueras víctima o voluntario, ahora la mayor parte de tu cuerpo está compuesto de cables y tornillos. Eso te ha hecho más fuerte, más duro y más versátil, pero muchas veces te preguntas si ahora eres menos humano de lo que eras cuando todo comenzó.",
+			"descripcionSecundario":"Un robot de la antigüedad, creado por un brujo o un sacerdote, que a lo largo del tiempo ha desarrollado ideas y sentimientos. Sencillo y fuerte, se te daba bien cumplir órdenes hasta que llegó el complicado mundo actual en el que no te quedó más remedio que empezar a pensar por ti mismo."
+		},
+		{
+			"num":"24",
+			"tituloPrincipal":"Portador",
+			"tituloSecundario":"Superpoder Viviente",
+			"descripcionPrincipal":"Tienes un objeto de gran valor en tu poder. Puede ser una joya, un arma u otro artilugio. Ese objeto almacena un gran poder al que tienes acceso cuando lo activas, un poder casi mágico que te permite hacer algo concreto casi a la perfección. Sin embargo, a veces falla: en momentos concretos, el objeto actúa de forma extraña. Como si tuviera conciencia propia...",
+			"descripcionSecundario":"Un ente superior vive dentro de ti y siempre que cumplas sus designios, tendrás acceso a algunos poderes increíbles, dones maravillosos con los que siempre soñaste. Pero debes cumplir sus designios. Sean cuales sean."
+		}
+	]
+}
