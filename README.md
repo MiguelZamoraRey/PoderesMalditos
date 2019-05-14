@@ -16,5 +16,6 @@ Esta pequeña web consta de un formulario como el utilizado en Poderes Malditos,
 
 - Generar una API REST para fecilitar la generación de contenido adicional.
 
+## URL de pruebas
 
-
+http://www.mzrdeveloper.com/odibex
