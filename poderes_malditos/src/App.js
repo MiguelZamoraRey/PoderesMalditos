@@ -43,10 +43,10 @@ export default class App extends React.Component {
       name:"",
       when:"",
       clave:"",
-      super1:"superpoder1",
-      super2:"superpoder2",
-      desc1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus facilisis nisi hendrerit feugiat. Sed mollis sapien dolor, at finibus quam congue a. Nam molestie enim a lacus blandit, ut scelerisque nisi finibus. Mauris rutrum justo nibh, ac ornare leo fermentum in. Ut vulputate est in malesuada laoreet. Aliquam et rutrum nibh. In hac habitasse platea dictumst.Fusce in dictum nisl, ultrices cursus nibh. Ut dictum purus lorem, et facilisis ligula viverra sagittis. Integer augue orci, rutrum id nibh id, vehicula rhoncus lectus. Donec tempus rhoncus velit nec scelerisque. Sed vulputate feugiat orci non mattis. Aenean sed augue sed erat tempor lobortis. Phasellus dignissim magna ultrices quam laoreet, vel suscipit justo molestie. Pellentesque tincidunt vel velit sit amet eleifend.",
-      desc2:"Sed egestas nisi id ex euismod, id vestibulum massa ornare. Donec faucibus quam at tincidunt rutrum. Vestibulum mollis consectetur efficitur. Nam eu dolor est. Cras non libero ullamcorper, congue sapien efficitur, scelerisque quam. Integer rutrum, lorem nec varius aliquam, elit dui pretium erat, a tincidunt tellus turpis at purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras luctus tincidunt libero quis posuere. Pellentesque ac dolor feugiat, ultricies sem in, mattis odio. Vestibulum non dolor sed turpis faucibus volutpat. Donec quis cursus turpis. Duis sem augue, dignissim sed tellus in, eleifend sodales nisl. Quisque eu hendrerit orci. Nam molestie lacinia ex, nec auctor dui pulvinar quis. Vivamus vel commodo dolor, ac interdum felis.",
+      super1:"",
+      super2:"",
+      desc1:"",
+      desc2:"",
       superseleccionado: "",
     };
     // This binding is necessary to make `this` work in the callback

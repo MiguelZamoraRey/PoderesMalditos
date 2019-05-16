@@ -1,4 +1,40 @@
 {
+	"attrquestions":[
+		{
+			"num":"1",
+			"question":"what?",
+			"responses":[
+				{
+					"num":"1",
+					"text":"response1",
+					"value":"I"
+				},
+				{
+					"num":"2",
+					"text":"response2",
+					"value":"A"
+				},
+			]
+		}
+	],
+	"powerquestions":[
+		{
+			"num":"1",
+			"question":"what?",
+			"responses":[
+				{
+					"num":"1",
+					"text":"response1",
+					"value":"3"
+				},
+				{
+					"num":"2",
+					"text":"response2",
+					"value":"9"
+				},
+			]
+		}
+	],
 	"superpoderes":[
 		{
 			"num":"1",
