@@ -15,7 +15,7 @@ export default class IntroComponent extends React.Component {
 
   render() {
     return (
-      <div className={this.props.clase}>
+      <div className={this.props.clase} id={this.props.sectionIndex}>
         <img src={logo} className="App-logo" alt="logo"/>
         <p>Bienvenido al Proyecto ODIBEX</p>
         <Button onClick={this.functionPassed} outline color="secondary">

@@ -2,17 +2,53 @@
 	"attrquestions":[
 		{
 			"num":"1",
-			"question":"what?",
+			"question":"¿Con que género te identificas?",
 			"responses":[
 				{
 					"num":"1",
-					"text":"response1",
+					"text":"Hombre",
 					"value":"I"
 				},
 				{
 					"num":"2",
-					"text":"response2",
+					"text":"Mujer",
+					"value":"O"
+				},
+				{
+					"num":"3",
+					"text":"Otro",
+					"value":"M"
+				}
+			]
+		},
+		{
+			"num":"2",
+			"question":"¿Cuantos años tiene?",
+			"responses":[
+				{
+					"num":"1",
+					"text":"Niño(0-10)",
+					"value":"M"
+				},
+				{
+					"num":"2",
+					"text":"Adolescente(11-20)",
+					"value":"I"
+				},
+				{
+					"num":"3",
+					"text":"Joven(21-35)",
+					"value":"O"
+				},
+				{
+					"num":"4",
+					"text":"Adulto(36-60)",
 					"value":"A"
+				},
+				{
+					"num":"5",
+					"text":"Anciano(60 o más)",
+					"value":"P"
 				}
 			]
 		}

@@ -14,7 +14,7 @@ export default class QuestionOptionsComponent extends React.Component {
 
   render() {
     return (
-      <div className={this.props.clase}>
+      <div className={this.props.clase} id={this.props.sectionIndex}>
         <Card body>
             <CardTitle>{this.props.title}</CardTitle>
             {this.props.children}

@@ -15,24 +15,8 @@ export default class App extends React.Component {
     //añadir los atributos que iran modificandose con el formulario
     this.state = {
       activeTab: '1',
-      clase1: 'visible',
-      clase2: 'transparent',
-      clase3: 'transparent',
-      clase4: 'transparent',
-      clase5: 'transparent',
-      clase6: 'transparent',
-      clase7: 'transparent',
-      clase8: 'transparent',
-      clase9: 'transparent',
-      clase10: 'transparent',
-      clase11: 'transparent',
-      clase12: 'transparent',
-      clase13: 'transparent',
-      clase14: 'transparent',
-      clase15: 'transparent',
-      clase16: 'transparent',
-      clase17: 'transparent',
-      clase18: 'transparent',
+      btnselected: 'question-btn btn btn-success',
+      btnnotselected: 'question-btn btn btn-outline-secondary',
       selectedOption: '',
       amor: 2,
       ira: 2,
@@ -53,6 +37,8 @@ export default class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
     this.toggle = this.toggle.bind(this);
+    this.registerResponse = this.registerResponse.bind(this);
+    this.changeVisibleSection = this.changeVisibleSection.bind(this);
   }
 
   toggle(tab) {
@@ -67,11 +53,27 @@ export default class App extends React.Component {
     this.setState({
       selectedOption: event.target.value 
     });
-    event.target.hover = true
+    event.target.hover = true;
+    var btns = document.getElementsByClassName('question-btn');
+    for (let item of btns) {
+      item.className=this.state.btnnotselected;
+    }
+    event.target.className=this.state.btnselected;
   }
 
   handleClick(num) {
-    
+    if((num === 1 || num === 12 || num === 15 || num === 16 || num === 17) || (this.state.selectedOption !== "")){
+      this.registerResponse(num);
+      this.changeVisibleSection(num);
+      this.setState(state => ({
+        selectedOption: "",
+      }));
+    }else{
+      console.log("selecciones una opcion");
+    }
+  }
+
+  registerResponse(num){
     var numaux = num-1;
     var superpoderaux;
 
@@ -108,10 +110,12 @@ export default class App extends React.Component {
           }));
         break;
         default:
-          console.log("opcion no válida");
+          this.setState(state => ({
+            selectedOption: "",
+          }));
         break;
       }
-    }else if(numaux>11 && numaux<14){//psicotecnicas
+    }else if(numaux>11 && numaux<14){
         var intnum = parseInt(this.state.selectedOption);
         superpoderaux = this.state.superpoder + intnum;
         this.setState(state => ({
@@ -124,15 +128,12 @@ export default class App extends React.Component {
       }else{
         intnum = 12;
       }
-
       superpoderaux = this.state.superpoder + intnum;
       this.setState(state => ({
         superpoder: superpoderaux,
       }));
-
       var objSP = data.superpoderes[this.state.superpoder];
       console.log(objSP);
-
       this.setState(state => ({
         super1: objSP.tituloPrincipal,
         super2: objSP.tituloSecundario,
@@ -149,7 +150,6 @@ export default class App extends React.Component {
           superseleccionado: this.state.super2,
         }));
       }
-      /*depende del seleccionado*/
     }else if(numaux === 16){
       var nameF = document.getElementById("nombreF").value;
       var fechaF = document.getElementById("fechaF").value;
@@ -158,205 +158,99 @@ export default class App extends React.Component {
         name: nameF,
         when: fechaF,
         clave: claveF,
+        selectedOption: "ok",
       }));
     }
+  }
 
-    if(this.state.selectedOption === "" && numaux>0 ){
-        /*Modal selecciona una respuesta*/
-    }else{
-       switch (num){
-        case 1:
-          this.setState(state => ({
-            clase1: 'transparent',
-            clase2: 'visible',
-          }));
-        break;
-        case 2:
-          this.setState(state => ({
-            clase2: 'transparent',
-            clase3: 'visible',
-          }));
-        break;
-        case 3:
-          this.setState(state => ({
-            clase3: 'transparent',
-            clase4: 'visible',
-          }));
-        break;
-        case 4:
-          this.setState(state => ({
-            clase4: 'transparent',
-            clase5: 'visible',
-          }));
-        break;
-        case 5:
-          this.setState(state => ({
-            clase5: 'transparent',
-            clase6: 'visible',
-          }));
-        break;
-        case 6:
-          this.setState(state => ({
-            clase6: 'transparent',
-            clase7: 'visible',
-          }));
-        break;
-        case 7:
-          this.setState(state => ({
-            clase7: 'transparent',
-            clase8: 'visible',
-          }));
-        break;
-        case 8:
-          this.setState(state => ({
-            clase8: 'transparent',
-            clase9: 'visible',
-          }));
-        break;
-        case 9:
-          this.setState(state => ({
-            clase9: 'transparent',
-            clase10: 'visible',
-          }));
-        break;
-        case 10:
-          this.setState(state => ({
-            clase10: 'transparent',
-            clase11: 'visible',
-          }));
-        break;
-        case 11:
-          this.setState(state => ({
-            clase11: 'transparent',
-            clase12: 'visible',
-          }));
-        break;
-        case 12:
-          this.setState(state => ({
-            clase12: 'transparent',
-            clase13: 'visible',
-          }));
-        break;
-        case 13:
-          this.setState(state => ({
-            clase13: 'transparent',
-            clase14: 'visible',
-          }));
-        break;
-        case 14:
-          this.setState(state => ({
-            clase14: 'transparent',
-            clase15: 'visible',
-          }));
-        break;
-        case 15:
-          this.setState(state => ({
-            clase15: 'transparent',
-            clase16: 'visible',
-          }));
-        break;
-        case 16:
-          this.setState(state => ({
-            clase16: 'transparent',
-            clase17: 'visible',
-          }));
-        break;
-        case 17:
-          this.setState(state => ({
-            clase17: 'transparent',
-            clase18: 'visible',
-          }));
-        break
-        default:
-          console.log("opcion no válida");
-        break;
-      }
-    }
+  changeVisibleSection(num){
+    document.getElementById(num).className="transparent";
+    document.getElementById(num+1).className="visible";
   }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <IntroComponent clase={this.state.clase1} sendFunction={this.handleClick} sectionIndex={1}/>
-          <QuestionOptionsComponent title={"¿Con que género te identificas?"} clase={this.state.clase2} sendFunction={this.handleClick} sectionIndex={2}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Hombre</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Mujer</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Otro</Button>
+          <IntroComponent clase="visible" sendFunction={this.handleClick} sectionIndex={1}/>
+          <QuestionOptionsComponent title={"¿Con que género te identificas?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={2}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Hombre</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Mujer</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Otro</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Cuantos años tiene?"} clase={this.state.clase3} sendFunction={this.handleClick} sectionIndex={3}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Niño(0-10)</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Adolescente(11-20)</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Joven(21-35)</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Adulto(36-60)</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Anciano(60 o más)</Button>
+          <QuestionOptionsComponent title={"¿Cuantos años tiene?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={3}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Niño(0-10)</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Adolescente(11-20)</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Joven(21-35)</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Adulto(36-60)</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Anciano(60 o más)</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Cuál es su valor más preciado?"} clase={this.state.clase4} sendFunction={this.handleClick} sectionIndex={4}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Objeto</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Persona</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Valor</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Religión</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Organización</Button>
+          <QuestionOptionsComponent title={"¿Cuál es su valor más preciado?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={4}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Objeto</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Persona</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Valor</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Religión</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Organización</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"Si pudieras viajar al pasado y matar a Hitler, ¿lo haría?"} clase={this.state.clase5} sendFunction={this.handleClick} sectionIndex={5}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Sí</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">No</Button>
+          <QuestionOptionsComponent title={"Si pudieras viajar al pasado y matar a Hitler, ¿lo haría?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={5}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Sí</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">No</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent  title={"¿Daría su vida por una causa noble?"} clase={this.state.clase6} sendFunction={this.handleClick} sectionIndex={6}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Sí</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">No</Button>
+          <QuestionOptionsComponent  title={"¿Daría su vida por una causa noble?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={6}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Sí</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">No</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Cuál es su color favorito?"} clase={this.state.clase7} sendFunction={this.handleClick} sectionIndex={7}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Blanco</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Rojo</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Verde</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Amarillo</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Azul</Button>
+          <QuestionOptionsComponent title={"¿Cuál es su color favorito?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={7}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Blanco</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Rojo</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Verde</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Amarillo</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Azul</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Con cuál de los siguientes animales se siente más identificado?"} clase={this.state.clase8} sendFunction={this.handleClick} sectionIndex={8}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">León</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Elefante</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Perro</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Ágila</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Pez</Button>
+          <QuestionOptionsComponent title={"¿Con cuál de los siguientes animales se siente más identificado?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={8}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">León</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Elefante</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Perro</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Ágila</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Pez</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Cómo definiría su infancia?"} clase={this.state.clase9} sendFunction={this.handleClick} sectionIndex={9}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Feliz</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Normal</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Desgraciada</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Traumática</Button>
+          <QuestionOptionsComponent title={"¿Cómo definiría su infancia?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={9}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Feliz</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Normal</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Desgraciada</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Traumática</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Por qué se ha unido al Escuadron Maildito?"} clase={this.state.clase10} sendFunction={this.handleClick} sectionIndex={10}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="O">Heroísmo</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Obligado</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Conveniencia</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Esperanza</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Venganza</Button>
+          <QuestionOptionsComponent title={"¿Por qué se ha unido al Escuadron Maildito?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={10}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="O">Heroísmo</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Obligado</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Conveniencia</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Esperanza</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Venganza</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"¿Qué opina del Profesor Klosseheimmer?"} clase={this.state.clase11} sendFunction={this.handleClick} sectionIndex={11}>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="A">Le admiro</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="P">Me cae bien</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="M">Me cae mal</Button>
-            <Button className="question-btn" outline color="secondary" onClick={this.handleOptionChange} value="I">Le odio con todas mis fuerzas</Button>
+          <QuestionOptionsComponent title={"¿Qué opina del Profesor Klosseheimmer?"} clase="transparent" sendFunction={this.handleClick} sectionIndex={11}>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="A">Le admiro</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="P">Me cae bien</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="M">Me cae mal</Button>
+            <Button className="question-btn" outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="I">Le odio con todas mis fuerzas</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={""} clase={this.state.clase12} sendFunction={this.handleClick} sectionIndex={12}>
+          <QuestionOptionsComponent title={""} clase="transparent" sendFunction={this.handleClick} sectionIndex={12}>
             <p>Ahora dará comienzo la sección psicotécnica</p>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"La palabra \"camion\" es a \"guisante\" como \"hidra\" a..."} clase={this.state.clase13} sendFunction={this.handleClick} sectionIndex={13}>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="1">Matemáticas</Button>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="2">Frío</Button>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="3">Cobre</Button>
+          <QuestionOptionsComponent title={"La palabra \"camion\" es a \"guisante\" como \"hidra\" a..."} clase="transparent" sendFunction={this.handleClick} sectionIndex={13}>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="1">Matemáticas</Button>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="2">Frío</Button>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="3">Cobre</Button>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"Siga la secuencia lógica: barra, círculo, cubo, rombo..."} clase={this.state.clase14} sendFunction={this.handleClick} sectionIndex={14}>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="0">París</Button>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="3">Ballena</Button>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="6">Púrpura</Button>
-            <Button className="question-btn"  outline color="secondary" onClick={this.handleOptionChange} value="9">Nieve</Button>
+          <QuestionOptionsComponent title={"Siga la secuencia lógica: barra, círculo, cubo, rombo..."} clase="transparent" sendFunction={this.handleClick} sectionIndex={14}>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="0">París</Button>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="3">Ballena</Button>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="6">Púrpura</Button>
+            <Button className="question-btn"  outline color={this.state.btnnotselected} onClick={this.handleOptionChange} value="9">Nieve</Button>
           </QuestionOptionsComponent>          
-          <QuestionOptionsComponent title={"Escriba la primera frase que se le ocurra"} clase={this.state.clase15} sendFunction={this.handleClick} sectionIndex={15}>
+          <QuestionOptionsComponent title={"Escriba la primera frase que se le ocurra"} clase="transparent" sendFunction={this.handleClick} sectionIndex={15}>
             <Input type="textarea" name="text" id="frase" />
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"Aclare su superpoder por favor"} clase={this.state.clase16} sendFunction={this.handleClick} sectionIndex={16}>
+          <QuestionOptionsComponent title={"Aclare su superpoder por favor"} clase="transparent" sendFunction={this.handleClick} sectionIndex={16}>
              <Nav tabs>
               <NavItem>
                 <NavLink className={classnames({ active: this.state.activeTab === '1' })} onClick={() => { this.toggle('1'); }}>
@@ -386,8 +280,8 @@ export default class App extends React.Component {
               </TabPane>
             </TabContent>
           </QuestionOptionsComponent>
-          <QuestionOptionsComponent title={"Rellene los campos restantes"} clase={this.state.clase17} sendFunction={this.handleClick} sectionIndex={17}>
-            <Form  id="14">
+          <QuestionOptionsComponent title={"Rellene los campos restantes"} clase="transparent" sendFunction={this.handleClick} sectionIndex={17}>
+            <Form>
               <FormGroup tag="fieldset">
                   <FormGroup>
                     <Label for="nombreF">Nombre</Label>
@@ -404,7 +298,7 @@ export default class App extends React.Component {
               </FormGroup>
             </Form>
           </QuestionOptionsComponent>
-          <ResultComponent title={"Carné del Escuadron Maldito"} clase={this.state.clase18} sectionIndex={18}>
+          <ResultComponent title={"Carné del Escuadron Maldito"} clase="transparent" sectionIndex={18}>
             <Container>
               <Row>
                 <Col xs="12" md="6">

@@ -9,7 +9,7 @@ export default class ResultComponent extends React.Component {
 
   render() {
     return (
-      <div className={this.props.clase}>
+      <div className={this.props.clase} id={this.props.sectionIndex}>
         <Card body>
             <CardTitle><strong>{this.props.title}</strong></CardTitle>
             {this.props.children}
